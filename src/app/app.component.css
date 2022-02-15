@@ -1,0 +1,53 @@
+.main-container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  max-width: 1000px;
+}
+
+.scroll-outer {
+  height: 100%;
+}
+
+.section-name {
+    background: black;
+    width: 110px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+.step-section.active .section-name{
+    background: #fff;
+    color: black;
+}
+
+.card-container {
+  height: 100%;
+  background: #c1c1c1;
+}
+
+.card-container h3 {
+    padding: 25px;
+}
+
+.scroll-container {
+    width: 25px;
+    top: 15%;
+    left: 0;
+    position: fixed;
+}
+
+.scroll-container:hover {
+  opacity: 1;
+}
+
+.step-section {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  background-color: cream;
+  justify-content: flex-start;
+}

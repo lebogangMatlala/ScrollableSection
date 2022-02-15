@@ -1,0 +1,51 @@
+
+<div class="main-container">
+  <div class="scroll-container">
+    <div class="step-section" [ngClass]="{'active': activeSection === 1}" pageScroll
+      (click)="scrollTo(introduction, 1)">
+      <div class="vertical-nav">
+        <div class="section-name">Introduction {{activeSection}}</div>
+      </div>
+    </div>
+    <div class="step-section" [ngClass]="{'active': activeSection === 2}" pageScroll
+      (click)="scrollTo(profile, 2)">
+      <div class="vertical-nav">
+        <div class="section-name">Profile</div>
+      </div>
+    </div>
+    <div class="step-section" [ngClass]="{'active': activeSection === 3}" pageScroll
+      (click)="scrollTo(achivements, 3)">
+      <div class="vertical-nav">
+        <div class="section-name">Achivements</div>
+      </div>
+    </div>
+    <div class="step-section" [ngClass]="{'active': activeSection === 4}" pageScroll
+      (click)="scrollTo(contactus, 4)">
+      <div class="vertical-nav">
+        <div class="section-name">Contact Us</div>
+      </div>
+    </div>
+  </div>
+
+  <div #introduction class="scroll-outer">
+    <div class="card-container">
+      <h3>Introduction</h3>
+    </div>
+  </div>
+  <div #profile class="scroll-outer">
+    <div class="card-container">
+      <h3>Profile</h3>
+    </div>
+  </div>
+  <div #achivements class="scroll-outer">
+    <div class="card-container">
+      <h3>Achivements</h3>
+    </div>
+  </div>
+  <div #contactus class="scroll-outer">
+    <div class="card-container">
+      <h3>Contact Us</h3>
+    </div>
+  </div>
+</div>
+<!--<router-outlet></router-outlet>-->
